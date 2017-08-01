@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Chat App
+  </h1>
+</div>
+<div id="left-chat">
+  <app-chat [name]="'Mario'" [console]="mainConsole" (mainConsole)="updateConsole($event)"></app-chat>
+</div>
+<div id="right-chat">
+  <app-chat [name]="'Luigi'" [console]="mainConsole" (mainConsole)="updateConsole($event)"></app-chat>
+</div>

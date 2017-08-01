@@ -1,0 +1,17 @@
+<br>Name:  <input type="text" [(ngModel)]="name"><br>
+<br>Msg: <input type="text" (input)="message = $event.target.value">
+<button type="button" (click)="sendMessage()">Send</button>
+<br>
+<br>
+<div class="dropdown">
+  <button class="dropbtn">Pre-set</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a *ngFor="let response of responses" (click)="enterResponse(response)">
+      {{response}}
+    </a>
+  </div>
+</div>
+<br>
+<br>
+<textarea rows="25" cols="40" [value]="console">
+</textarea>

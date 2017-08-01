@@ -1,0 +1,15 @@
+
+#left-chat {
+  height: 600px;
+  width: 50%;
+  float: left;
+  background: gray;
+  text-align: center;
+}
+#right-chat {
+  height: 600px;
+  width: 50%;
+  float: right;
+  background: silver;
+  text-align: center;
+}
